@@ -2,18 +2,28 @@ package main
 
 import "fmt"
 
-// Variable Declaration can be done here
-var deckSize int
-
 func main() {
-	deckSize = 20
 
 	// Ways of declaring variable
-	var card string = "Ace of Spades"
-	cardNew := "Ace of Spades"
+	cardNew := newCard()
 
-	// Print the variables
-	fmt.Println(card)
-	fmt.Println((cardNew))
-	fmt.Println(deckSize)
+	// Slice Example
+	cards := []string{"Ace of Diamonds", newCard()}
+
+	cards = append(cards, "Six of Spades")
+
+	fmt.Println(cardNew)
+
+	fmt.Println(cards)
+
+	// Loop Iteration
+	for i, card := range cards {
+		fmt.Println(i, card)
+	}
+
+}
+
+// Initialize the variables
+func newCard() string {
+	return "Five of Diamonds"
 }
