@@ -1,11 +1,9 @@
 package main
 
-import "fmt"
-
 func main() {
 
 	// Slice Example
-	cards := newDeck()
+	// cards := newDeck()
 
 	// Print the deck of cards
 	// cards.print()
@@ -16,11 +14,16 @@ func main() {
 	// fmt.Println("----")
 	// remainingCards.print()
 
-	fmt.Println(cards.toString())
+	// fmt.Println(cards.toString())
 
-	cards.saveToFile("my-cards")
+	// cards.saveToFile("my-cards")
 
 	// greeting := "Hi vzan2012"
 
+	cards := newDeckFromFile("my-cards")
+
+	cards.print()
+
 	// fmt.Println([]byte(greeting))
+	// fmt.Println(newDeckFromFile("my-cardss"))
 }
