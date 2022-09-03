@@ -1,0 +1,16 @@
+mode: set
+cards/deck.go:17.21,23.33 4 1
+cards/deck.go:29.2,29.14 1 1
+cards/deck.go:23.33,24.36 1 1
+cards/deck.go:24.36,26.4 1 1
+cards/deck.go:33.23,34.25 1 0
+cards/deck.go:34.25,36.3 1 0
+cards/deck.go:40.46,42.2 1 0
+cards/deck.go:44.33,46.2 1 1
+cards/deck.go:49.49,51.2 1 1
+cards/deck.go:54.44,56.17 2 1
+cards/deck.go:61.2,63.16 2 1
+cards/deck.go:56.17,59.3 2 0
+cards/deck.go:67.25,72.19 3 0
+cards/deck.go:72.19,77.3 2 0
+cards/main.go:5.13,42.2 5 0
