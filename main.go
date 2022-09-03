@@ -1,5 +1,7 @@
 package main
 
+import "fmt"
+
 func main() {
 
 	// Slice Example
@@ -22,7 +24,18 @@ func main() {
 
 	cards := newDeckFromFile("my-cards")
 
+	// Print the cards
 	cards.print()
+
+	// Shuffle the cards
+	cards.shuffle()
+
+	// Print the cards
+	fmt.Println("**********************")
+
+	cards.print()
+
+
 
 	// fmt.Println([]byte(greeting))
 	// fmt.Println(newDeckFromFile("my-cardss"))
