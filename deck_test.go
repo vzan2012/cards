@@ -50,3 +50,34 @@ func TestSaveToDeckAndNewDeckFromFile(t *testing.T) {
 	// Remove the file 
 	os.Remove(testFileName)
 }
+
+func TestDeckPrint(t *testing.T) {
+	d := newDeck();
+
+	d.print();
+
+	if(len(d) <= 0) {
+		t.Errorf("Deck of cards cannot be null should have 16 cards")
+	}
+}
+
+func TestDeckShuffle(t *testing.T) {
+	d := newDeck()
+
+	d.shuffle()
+
+	if(d == nil) {
+		t.Errorf("Deck cannot be null")
+	}
+}
+
+func TestDealDeck(t *testing.T) {
+	testHandSize := 6
+	d := newDeck()
+
+	hand, remainingCards := deal(d, testHandSize)
+
+	if (hand == nil && remainingCards == nil) {
+		t.Errorf("Hand and Remaining Cards cannot be empty")
+	}
+}
